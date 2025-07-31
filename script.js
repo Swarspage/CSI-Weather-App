@@ -13,7 +13,6 @@ let container = document.querySelector(".container");
 async function getData(city) {
   const response = await fetch(URL + `q=${city}&appid=${apiKey}&units=metric`);
   let data = await response.json();
-  console.log(data);
   return {
     tempMax: data.main.temp_max,
     humidity: data.main.humidity,
