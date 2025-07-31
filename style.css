@@ -7,8 +7,38 @@
   font-style: normal;
 }
 
-.container {
-  background-image: url("cloudy.png");
+.clouds {
+  background-image: url("clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  transition: ease-in-out 2s;
+  overflow: hidden;
+}
+
+.rain {
+  background-image: url("rainy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  transition: ease-in-out 2s;
+  overflow: hidden;
+}
+
+.default-weather {
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  transition: ease-in-out 2s;
+  overflow: hidden;
+}
+
+.clear {
+  background-image: url("clear.png");
   background-position: center; /* Focuses the center of the image */
   background-repeat: no-repeat; /* Avoid repeating */
   background-size: cover; /* Ensures div is fully covered */
@@ -42,6 +72,13 @@ header {
   height: 3rem;
   padding-left: 3rem;
 }
+
+.search-bar button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
 .search-bar input::placeholder {
   color: black;
 }
@@ -79,4 +116,5 @@ main {
 .speed,
 .direction {
   font-size: 4rem;
+  transition: ease-in-out 1s;
 }
